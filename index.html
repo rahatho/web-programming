@@ -11,10 +11,8 @@
         $(document).ready(function(){
             $("button").click(function(){
                 var div= $("div");
-                div.animate({height:'300px', opacity:'0.4'},'slow');
-                div.animate({width:'300px', opacity:'0.8',},'slow');
-                div.animate({height:'75px', opacity:'0.4'},'slow');
-                div.animate({width:'75px', opacity:'0.8'},'slow');
+                div.animate({left:'300px'},'slow');
+                div.animate({fontSize:'3em'},'slow');
             });
         });
     </script>
@@ -23,7 +21,7 @@
 <body>
   <br><br>
   <button>Animation</button><br><br>
-    <div style="background:olive; width: 75px; height:75px; position: absolute;"></div>
+    <div style="background:olive; width: 100px; height:100px; position: absolute;">Hello</div>
     
 </body>
 </html>
