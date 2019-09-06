@@ -10,12 +10,11 @@
     <script>
         $(document).ready(function(){
             $("button").click(function(){
-                $("#anim").animate({
-                    //left: '250px',
-                    //opacity: '0.5',
-                    height: 'toggle'
-                    //width: '+150px'
-                });
+                var div= $("div");
+                div.animate({height:'300px', opacity:'0.4'},'slow');
+                div.animate({width:'300px', opacity:'0.8',},'slow');
+                div.animate({height:'75px', opacity:'0.4'},'slow');
+                div.animate({width:'75px', opacity:'0.8'},'slow');
             });
         });
     </script>
@@ -24,7 +23,7 @@
 <body>
   <br><br>
   <button>Animation</button><br><br>
-    <div id="anim" style="background:olive; width: 75px; height:75px; position: absolute;"></div>
+    <div style="background:olive; width: 75px; height:75px; position: absolute;"></div>
     
 </body>
 </html>
