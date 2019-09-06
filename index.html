@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.4.1.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").slideDown();
+                $("#div2").slideUp();
+                $("#div3").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <button>Try this</button>
+  <br><br>
+    <div id="div1" style="width: 50px ; height: 50px; background-color: red;"></div><br><br>
+    <div id="div2" style="width: 50px ; height: 50px; background-color: blue;"></div><br><br>
+    <div id="div3" style="width: 50px ; height: 50px; background-color: green;"></div><br><br>
+</body>
+</html>
