@@ -9,19 +9,36 @@
     </script>
     <script>
         $(document).ready(function(){
-            $("button").click(function(){
-                var div= $("div");
-                div.animate({left:'300px'},'slow');
-                div.animate({fontSize:'3em'},'slow');
+            $("#flip").click(function(){
+                $("#panel").slideDown(5000);});
+                $("#stop").click(function(){
+                $("#panel").stop();
             });
         });
     </script>
+    <style> 
+        #panel, #flip {
+          padding: 5px;
+          font-size: 18px;
+          text-align: center;
+          background-color: #555;
+          color: white;
+          border: solid 1px #666;
+          border-radius: 3px;
+        }
+        
+        #panel {
+          padding: 50px;
+          display: none;
+        }
+        </style>
 
 </head>
 <body>
   <br><br>
-  <button>Animation</button><br><br>
-    <div style="background:olive; width: 100px; height:100px; position: absolute;">Hello</div>
-    
+  <button id="stop">Stop sliding</button>
+
+  <div id="flip">Click to slide down panel</div>
+  <div id="panel">Hello world!</div>
 </body>
 </html>
