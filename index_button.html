@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").click(function(){
+                $(this).animate()
+            });
+        });
+    </script>
 </head>
-<body>
+<body style="padding:20px;border:solid 5px green;border-radius:5px;height:760px;background-color: honeydew;">
     <ul type="bullet">
         <li>Coffee</li>
         <li>Tea</li>
@@ -20,6 +28,20 @@
     </ol>
     <p title="Rahat 'name'">Name: Rahat</p>
     <p title='Rahat "name"'>Name: Rahat</p>
+
+    <div style="font-size: 20px;
+    background-color:green;
+    color: aqua;
+    padding: 5px;
+    border: solid 1px #666666;
+    border-radius: 5px;
+    width: 75px;
+    text-align: center">demo</div>
+
+    <p>v3 is a layered system designed to expose underlying 
+        Docker-formatted container image and Kubernetes concepts 
+        as accurately as possible, with a focus on easy composition 
+        of applications by a developer. For example, install Ruby, push code, and add MySQL</p> 
 
 </body>
 </html>
