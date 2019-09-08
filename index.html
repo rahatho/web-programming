@@ -7,31 +7,32 @@
     <title>Document</title>
     <script src="jquery-3.4.1.js">
     </script>
+
     <script>
         $(document).ready(function(){
             $("#flip").click(function(){
-                $("#panel").slideDown(5000);});
-                $("#stop").click(function(){
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function() {
                 $("#panel").stop();
             });
         });
     </script>
     <style> 
         #panel, #flip {
-          padding: 5px;
-          font-size: 18px;
-          text-align: center;
-          background-color: #555;
-          color: white;
-          border: solid 1px #666;
-          border-radius: 3px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border: solid 1px #666;
+            border-radius: 3px;
         }
-        
+
         #panel {
-          padding: 50px;
-          display: none;
+            padding: 50px;
+            display: none;
         }
-        </style>
+    </style>
 
 </head>
 <body>
